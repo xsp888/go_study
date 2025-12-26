@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "3a2326b6-c30d-483a-97ed-eb703c9ccdf7",
+		"name": "作业4测试用例",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"zhangsan\",\r\n    \"password\": \"main\",\r\n    \"email\": \"zhangsan@test.com\"\r\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"zhangsan\",\r\n    \"password\": \"main\"\r\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/post/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InpoYW5nc2FuIiwiaXNzIjoidXNlci1hdXRoLWp3dCIsImV4cCI6MTc2Njg0ODIzOSwiaWF0IjoxNzY2NzYxODM5fQ.bl1syAzehhP1JgRCJV44d_T8QSBpt1O10e9Wi4rtDSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"t7\",\n\t\"content\":\"t7\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/post/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/post/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InpoYW5nc2FuIiwiaXNzIjoidXNlci1hdXRoLWp3dCIsImV4cCI6MTc2Njg0ODIzOSwiaWF0IjoxNzY2NzYxODM5fQ.bl1syAzehhP1JgRCJV44d_T8QSBpt1O10e9Wi4rtDSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"t7改为tt7\",\n\t\"content\":\"t7改为tt7\",\n\t\"id\" : 7\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/post/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"post",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/post/delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InpoYW5nc2FuIiwiaXNzIjoidXNlci1hdXRoLWp3dCIsImV4cCI6MTc2Njg0ODIzOSwiaWF0IjoxNzY2NzYxODM5fQ.bl1syAzehhP1JgRCJV44d_T8QSBpt1O10e9Wi4rtDSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":6\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/post/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"post",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/post/getByID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InpoYW5nc2FuIiwiaXNzIjoidXNlci1hdXRoLWp3dCIsImV4cCI6MTc2Njg0ODIzOSwiaWF0IjoxNzY2NzYxODM5fQ.bl1syAzehhP1JgRCJV44d_T8QSBpt1O10e9Wi4rtDSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":7\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/post/getByID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"post",
+						"getByID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/post/getAllPost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InpoYW5nc2FuIiwiaXNzIjoidXNlci1hdXRoLWp3dCIsImV4cCI6MTc2Njg0ODIzOSwiaWF0IjoxNzY2NzYxODM5fQ.bl1syAzehhP1JgRCJV44d_T8QSBpt1O10e9Wi4rtDSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\":1,\n\t\"pageSize\":2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/post/getAllPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"post",
+						"getAllPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/comment/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InpoYW5nc2FuIiwiaXNzIjoidXNlci1hdXRoLWp3dCIsImV4cCI6MTc2Njg0ODIzOSwiaWF0IjoxNzY2NzYxODM5fQ.bl1syAzehhP1JgRCJV44d_T8QSBpt1O10e9Wi4rtDSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\":\"评论22222\",\n\t\"post_id\":2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/comment/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"comment",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/comment/getCommentByPostID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InpoYW5nc2FuIiwiaXNzIjoidXNlci1hdXRoLWp3dCIsImV4cCI6MTc2Njg0ODIzOSwiaWF0IjoxNzY2NzYxODM5fQ.bl1syAzehhP1JgRCJV44d_T8QSBpt1O10e9Wi4rtDSE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"postId\" : 2,\n\t\"page\":1,\n\t\"pageSize\":2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/comment/getCommentByPostID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"comment",
+						"getCommentByPostID"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

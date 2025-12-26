@@ -1,0 +1,12 @@
+database:
+  host: "localhost"
+  port: 3306
+  username: "root"
+  password: "xsp888"
+  database: "test"
+  charset: "utf8mb4"
+  parseTime: true
+  timezone: "Asia%2FShanghai"
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: "1h"
