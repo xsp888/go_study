@@ -2,7 +2,7 @@ package config
 
 type JWTConfig struct {
 	JWTSecret string
-	JWTExpire int // 过期时间（小时）
+	JWTExpire int // 过期时间（小时）cesh
 }
 
 var AppConfig = &JWTConfig{
